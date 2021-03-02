@@ -1,0 +1,6 @@
+@import "../atomo/base.scss";
+.hija {
+    @include tamanio_hijes;
+    border-color: $color_hija;
+    @include vertical;
+}

@@ -1,0 +1,6 @@
+@import "./atomo/atomo.scss";
+@import "./molecula/moleculas.scss";
+@import "./organismo/organismo.scss";
+body {
+    @include horizontal;
+}

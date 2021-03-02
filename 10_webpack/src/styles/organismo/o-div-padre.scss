@@ -1,0 +1,6 @@
+@import "../atomo/base.scss";
+.padre {
+    @include tamanio_padres;
+    border-color: $color_secundary;
+    @include vertical;
+}

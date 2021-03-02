@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form>
+        <section>
+            <h1>Sign Up</h1>
+            <h4>Please fill in this form to create an account</h4>
+
+            <label for="firstName">First Name</label>
+            <input placeholder="Enter First Name" type="text" name="firstName" id="firstName" required
+                pattern="[a-zA-Z]+">
+            <br>
+            <br>
+            <label for="lastName">Last Name</label>
+            <input placeholder="Enter Last Name" type="text" name="lastName" id="lastName" required>
+            <br>
+            <br>
+            <label for="phone">Phone</label>
+            <input placeholder="Enter Phone Number" title="Only numbers" type="tel" name="phone" id="lastName" required
+                pattern="[0-9]+">
+            <br>
+            <br>
+            <label for="age">Age</label>
+            <input min="0" max="99" type="number" placeholder="Enter Your Age" title="Only numbers" name="age" required>
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input placeholder="Enter Email" type="email" name="email" id="email" required id="email">
+            <br>
+            <br>
+            <label for="url">url</label>
+            <input placeholder="Enter Url" type="url" name="url" id="url" required>
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input minlength="4" placeholder="Enter Password" type="password" name="password" id="password" required
+                pattern="[^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$]">
+            <br>
+            <br>
+            <label for="repeatPassword">Repeat Password</label>
+            <input placeholder="Repeat Password" type="password" name="repeatPassword" id="repeatPassword" required>
+            <br>
+            <br>
+            <div>
+                <input type="checkbox" checked="checked" name="rememberMe" id="rememberMe" class="checkbox">
+                <span>Remember me</span>
+            </div>
+
+            <div>
+                <p class="terms">By creating an account you agree to our <a href="http://">Terms & Privacy</a></p>
+            </div>
+
+            <div>
+                <input type="submit" value="Sign Up" class="submit">
+            </div>
+        </section>
+    </form>
+
+</body>
+
+</html>
